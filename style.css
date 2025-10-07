@@ -1,10 +1,20 @@
+
+.oswald{
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
 *{
   margin:0;
   padding:0;
   box-sizing:border-box;
+  overflow: hidden;
+  user-select: none;
 }
 body{
  background-image: url(https://karlskoga.se/images/18.3e70edcb175d7059a139d30/1606907291442/utanfor-gymnasiet-gradient.jpg);
+ height: 100%;
 }
 .container{
   display:flex;
@@ -16,25 +26,71 @@ body{
 }
 
 .zoom {
-  padding: 50px;
-  background-color: rgb(255, 149, 0, 0.7);
-  transition: transform .2s; /* Animation */
-  width: 200px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: transform 0.5s; /* Animation */
+  width: 350px;
   height: 300px;
-  margin: 0 auto;
-  border: 3px;
-  border-radius: 10px;
+  margin: auto;
+  border: 2px #45423c solid;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  color: orange;
+  text-align: center;
 
 }
 
-.zoom:hover {
-  transform: scale(2, 1.5);
+
+.zoom:nth-child(1):hover{
+    transform: scale(2, 1.5) translate(25%, 0%);
+}
+.zoom:nth-child(2):hover{
+    transform: scale(2, 1.5);
+}
+.zoom:nth-child(3):hover{
+    transform: scale(2, 1.5) translate(-25%, 0%);
 }
 
 #logo{
-    font-size: 3rem;
+    font-size: 4rem;
     display: flex;
     flex-direction: row;
-    color: rgba(227, 133, 0, 0.888);
-    background-color: transparent;
+    color: orange;
+    justify-content: center;
+    text-shadow: 3px 2px rgba(255, 166, 0, 0.457);
+
+}
+#logobox{
+    background-color: #00000080;
+}
+
+#prog{
+    background:linear-gradient(to top,#000f,rgba(0, 0, 0, 0.267)), url('https://cdn.stocksnap.io/img-thumbs/960w/programming-code_1STVFMTBJY.jpg');
+    background-size: contain;
+}
+#mafy{
+    background: linear-gradient(to top,#000f,rgba(0, 0, 0, 0.267)), url(https://msyanblog.com/content/images/size/w2000/2023/12/mathematics_image.jpg);
+    background-size: contain;
+}
+#pro{
+    background: linear-gradient(to top,#000f,rgba(0, 0, 0, 0.267)), url(https://th.bing.com/th/id/OIP.oDYVGR_mpl7ESL-Db9VBfAHaEK?w=307&h=180&c=7&r=0&o=7&cb=12&dpr=1.5&pid=1.7&rm=3);
+}
+#readmore{
+    background-color: rgba(255, 166, 0, 0.797);
+    border: 1px solid;
+    border-radius: 1px;
+    padding: 1px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#readmore:hover{
+    color: white;
+}
+h1{
+    margin-top: 40px;
+    font-weight: 400;
+    font-size: 3rem;
+    text-shadow: 3px 1px black;
 }
