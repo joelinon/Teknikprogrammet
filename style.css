@@ -1,0 +1,40 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body{
+ background-image: url(https://karlskoga.se/images/18.3e70edcb175d7059a139d30/1606907291442/utanfor-gymnasiet-gradient.jpg);
+}
+.container{
+  display:flex;
+  place-content:center;
+  height:100dvh;
+  background-color: #00000080;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.zoom {
+  padding: 50px;
+  background-color: rgb(255, 149, 0, 0.7);
+  transition: transform .2s; /* Animation */
+  width: 200px;
+  height: 300px;
+  margin: 0 auto;
+  border: 3px;
+  border-radius: 10px;
+
+}
+
+.zoom:hover {
+  transform: scale(2, 1.5);
+}
+
+#logo{
+    font-size: 3rem;
+    display: flex;
+    flex-direction: row;
+    color: rgba(227, 133, 0, 0.888);
+    background-color: transparent;
+}
